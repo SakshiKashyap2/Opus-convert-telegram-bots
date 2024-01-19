@@ -1,0 +1,26 @@
+{
+  "name": "converttoopus_bot",
+  "version": "1.0.0",
+  "description": "A telegram bot to convert any audio file to mp3",
+  "main": "app.js",
+  "debug": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 link 3okbxd07thc9ns1 2uu1isxf8u5w83o && pm2 start app.js",
+    "stop": "pm2 stop app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Sakshi",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "node-telegram-bot-api": "^0.64.0",
+    "pm2": "^5.3.0",
+    "request": "^2.88.2",
+    "stream": "^0.0.2",
+    "telegraf": "^4.15.3"
+  }
+}
